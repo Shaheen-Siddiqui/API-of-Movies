@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
-const config = require('../config');
+require('dotenv').config();
 
-const mongoURI = config.MONGODB_URI;
+
+const mongoURI = process.env.MONGODB_URI;
 
 const initializeDatabase = async () => {
   try {
