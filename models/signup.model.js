@@ -8,6 +8,7 @@ const SignupSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
+    unique:true
   },
   updatedContect:Number,
   password: String,

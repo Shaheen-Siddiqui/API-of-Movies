@@ -135,6 +135,7 @@ app.get("/users/phone/:phoneNumber", async (req, res) => {
   }
 });
 
+
 // POST REQUESTS************************
 app.post("/signup", async (req, res) => {
   const signupCredential = req.body;
